@@ -70,6 +70,10 @@
 #
 #               an EOL character signifies the end of the bind.
 
+
+# open alacritty via shift + opt/alt + enter
+shift + alt - return : open -a Alacritty
+
 # ############################################################### #
 # THE FOLLOWING SECTION CONTAIN SIMPLE MAPPINGS DEMONSTRATING HOW #
 # TO INTERACT WITH THE YABAI WM. THESE ARE SUPPOSED TO BE USED AS #
