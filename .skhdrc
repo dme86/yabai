@@ -72,7 +72,7 @@
 
 
 # open alacritty via shift + opt/alt + enter
-shift + alt - return : open -a Alacritty
+shift + alt - return : alacritty
 
 # ############################################################### #
 # THE FOLLOWING SECTION CONTAIN SIMPLE MAPPINGS DEMONSTRATING HOW #
