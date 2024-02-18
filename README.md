@@ -1,6 +1,9 @@
 # yabai
 
-This is my attempt to utilize a tiling window manager on macOS. Usually, I work under Linux with [dwm](https://github.com/dme86/dwm), but I also need something similar on macOS. I will execute this project using yabai, skhd, and sketchybar.
+This is my attempt to utilize a tiling window manager on macOS. Usually, I work under Linux with [dwm](https://github.com/dme86/dwm), but I also need something similar on macOS. 
+I will execute this project using yabai, skhd, and sketchybar.
+
+![enter image description here](https://i.imgur.com/1Ilp8rt.jpeg)
 
 ## keybindings
 
