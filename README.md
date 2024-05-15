@@ -9,6 +9,8 @@ I will execute this project using yabai, skhd, and sketchybar.
 
 Keybindings are implemented through [skhd](https://github.com/dme86/yabai/blob/main/.skhdrc).
 
+
+TODO: REWORK
 |Key  | Description |
 |--|--|
 | `Shift` + `Opt/Alt` + `Enter`|Open [Alacritty](https://github.com/dme86/alacritty)  |

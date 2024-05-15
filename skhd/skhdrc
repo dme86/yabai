@@ -1,0 +1,66 @@
+############
+# Programs #
+############
+
+# open alacritty via shift + opt/alt + enter
+shift + alt - return : alacritty
+
+
+
+####################
+# DESKTOP COMMANDS #
+####################
+
+# All desktop specific commands 
+
+cmd + alt -n : ~/.config/yabai/scripts/create_space.sh
+cmd + alt -d : ~/.config/yabai/scripts/delete_space.sh
+cmd - 1 : yabai -m space --focus 1
+cmd - 2 : yabai -m space --focus 2
+cmd - 3 : yabai -m space --focus 3
+cmd - 4 : yabai -m space --focus 4
+cmd - 5 : yabai -m space --focus 5
+
+#create space, move focussed window and follow focus - uses jq for parsing json (brew install jq)
+cmd + alt - o : yabai -m space --create && \
+	index="$(yabai -m query --spaces --display | jq 'map(select(."is-native-fullscreen" == false))[-1].index')" && \
+	yabai -m window --space "${index}" && \
+	yabai -m space --focus "${index}"
+
+
+
+####################
+# DISPLAY COMMANDS #
+####################
+
+# All display-specific commands use the ALT key.
+
+alt - 1  : yabai -m display --focus 1 # Focus on main display (external)
+alt - 2  : yabai -m display --focus 2 # Focus on Macbook display
+
+
+
+###################
+# WINDOW COMMANDS #
+###################
+
+# All window-specific commands use the SHIFT and CMD key.
+
+# focus previous or next window in window tree (options: prev, next)
+shift + cmd - j : yabai -m window --focus prev
+shift + cmd - k : yabai -m window --focus next
+
+# toggle window zoom
+shift + cmd - f : yabai -m window --toggle zoom-fullscreen
+
+# close focussed window
+shift + cmd - c : yabai -m window --close
+
+# swap window with leftt window
+shift + cmd - s : yabai -m window --swap west
+
+# swap window with leftt window
+shift + cmd - d : yabai -m window --swap east
+
+# toggle window split type
+alt - e : yabai -m window --toggle split
