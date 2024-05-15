@@ -47,8 +47,8 @@ alt - 2  : yabai -m display --focus 2 # Focus on Macbook display
 # All window-specific commands use the SHIFT and CMD key.
 
 # focus previous or next window in window tree (options: prev, next)
-shift + cmd - j : yabai -m window --focus prev
-shift + cmd - k : yabai -m window --focus next
+shift + cmd - j : yabai -m window --focus next || yabai -m window --focus first
+shift + cmd - k : yabai -m window --focus prev || yabai -m windoe --focus last
 
 # toggle window zoom
 shift + cmd - f : yabai -m window --toggle zoom-fullscreen
