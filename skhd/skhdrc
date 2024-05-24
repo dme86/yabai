@@ -39,7 +39,6 @@ alt - 1  : yabai -m display --focus 1 # Focus on main display (external)
 alt - 2  : yabai -m display --focus 2 # Focus on Macbook display
 
 
-
 ###################
 # WINDOW COMMANDS #
 ###################
@@ -64,3 +63,6 @@ shift + cmd - d : yabai -m window --swap east
 
 # toggle window split type
 alt - e : yabai -m window --toggle split
+
+# toggle space label
+shift + cmd - o : ~/.config/yabai/scripts/dynamic_label.sh
